@@ -32,9 +32,9 @@ for line in "${required_lines[@]}"; do
 done
 
 if [ "$missing" = false ]; then
-    echo "有"
+    echo "检测到已经存在限速配置"
 else
-    echo "没有，正在添加缺失配置..."
+    echo "没有检测到限速配置，正在添加缺失配置..."
     {
         echo ""
         echo "# 动态限速配置补充"
